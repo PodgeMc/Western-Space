@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int Timer;
-
     public GameObject FirstPersonCamera;
     public GameObject ThirdPersonCamera;
 
-    // Start is called before the first frame update
+    private bool isFirstPerson = true;
+
     void Start()
     {
-        Timer = 0;
+        ToggleCameras(); // Start with the initial camera setup
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Timer = Timer + 1;
+        // Check for input to toggle cameras
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            ToggleCameras();
+        }
+    }
+
+    void ToggleCameras()
+    {
+        isFirstPerson = !isFirstPerson;
+        FirstPersonCamera.SetActive(isFirstPerson);
+        ThirdPersonCamera.SetActive(!isFirstPerson);
     }
 }
