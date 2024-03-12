@@ -15,7 +15,7 @@ C:/Users/padra/source/repos/Western Space/Western-Space
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55858
+58312
 Successfully changed project path to: C:/Users/padra/source/repos/Western Space/Western-Space
 C:/Users/padra/source/repos/Western Space/Western-Space
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/padra/source/repos/Western Space/Western-Space
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7552] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3218426262 [EditorId] 3218426262 [Version] 1048832 [Id] WindowsEditor(7,Podges_laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12132] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 761388588 [EditorId] 761388588 [Version] 1048832 [Id] WindowsEditor(7,Podges_laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7552] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3218426262 [EditorId] 3218426262 [Version] 1048832 [Id] WindowsEditor(7,Podges_laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12132] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 761388588 [EditorId] 761388588 [Version] 1048832 [Id] WindowsEditor(7,Podges_laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 32.28 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 29.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.208489 seconds.
-- Loaded All Assemblies, in  0.834 seconds
+Registered in 0.010044 seconds.
+- Loaded All Assemblies, in  0.907 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.407 seconds
-Domain Reload Profiling: 1237ms
-	BeginReloadAssembly (237ms)
+- Finished resetting the current domain, in  0.393 seconds
+Domain Reload Profiling: 1296ms
+	BeginReloadAssembly (552ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (58ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (299ms)
-	LoadAllAssembliesAndSetupDomain (221ms)
-		LoadAssemblies (227ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (87ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
+		LoadAssemblies (545ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (216ms)
-			TypeCache.Refresh (214ms)
-				TypeCache.ScanAssembly (192ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (189ms)
+			TypeCache.Refresh (188ms)
+				TypeCache.ScanAssembly (161ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (408ms)
+	FinalizeReload (394ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (318ms)
+		SetupLoadedEditorAssemblies (298ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (14ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (207ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
+			ProcessInitializeOnLoadAttributes (191ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 1237ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.277 seconds
-Refreshing native plugins compatible for Editor in 8.31 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.208 seconds
+Refreshing native plugins compatible for Editor in 6.40 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.138 seconds
-Domain Reload Profiling: 2400ms
-	BeginReloadAssembly (263ms)
+- Finished resetting the current domain, in  1.152 seconds
+Domain Reload Profiling: 2353ms
+	BeginReloadAssembly (246ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (880ms)
-		LoadAssemblies (732ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (823ms)
+		LoadAssemblies (682ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (303ms)
-			TypeCache.Refresh (276ms)
-				TypeCache.ScanAssembly (253ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1139ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (246ms)
+				TypeCache.ScanAssembly (223ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1153ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (917ms)
+		SetupLoadedEditorAssemblies (902ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (191ms)
-			ProcessInitializeOnLoadAttributes (670ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			BeforeProcessingInitializeOnLoad (130ms)
+			ProcessInitializeOnLoadAttributes (692ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (23ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 7.64 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 13.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3463 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (56.8 KB). Loaded Objects now: 3926.
-Memory consumption went from 122.3 MB to 122.3 MB.
-Total: 7.000000 ms (FindLiveObjects: 0.492600 ms CreateObjectMapping: 0.167200 ms MarkObjects: 5.718800 ms  DeleteObjects: 0.619900 ms)
+Unloading 3467 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (29.6 KB). Loaded Objects now: 3933.
+Memory consumption went from 122.5 MB to 122.5 MB.
+Total: 5.285100 ms (FindLiveObjects: 0.398400 ms CreateObjectMapping: 0.257800 ms MarkObjects: 4.322700 ms  DeleteObjects: 0.304900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,68 +181,92 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1615392.240567 seconds.
-  path: Assets/Adventure_Character
-  artifactKey: Guid(c3090a873495dd641adb256e8c087553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Adventure_Character using Guid(c3090a873495dd641adb256e8c087553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc93851c466128df9aa864f4161b67f3') in 0.012172 seconds
+  Time since last request: 1618660.795813 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs/M10.prefab
+  artifactKey: Guid(3de3e928b09b435498a22492f928cc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs/M10.prefab using Guid(3de3e928b09b435498a22492f928cc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b604180c1847d27975a54f89c8945bc') in 0.276390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 65
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs
+  artifactKey: Guid(d09d4dbb758ce0c47b66739e9fd63dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs using Guid(d09d4dbb758ce0c47b66739e9fd63dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d95371bd9e1e16e6287f3453d5b9cc1') in 0.001337 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.656542 seconds.
-  path: Assets/Adventure_Character/Materials
-  artifactKey: Guid(62f5c2ad0fe942f4a81ed83028c4815a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Adventure_Character/Materials using Guid(62f5c2ad0fe942f4a81ed83028c4815a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d50255302cb3232b3b91ab257862a44') in 0.017030 seconds
+  Time since last request: 0.000141 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs/M500.prefab
+  artifactKey: Guid(c51d823049bc09049a2f2e88b1500d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs/M500.prefab using Guid(c51d823049bc09049a2f2e88b1500d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd389bd44b93b99c9bb8e31c446cb30a1') in 0.325905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs/SAR2000.prefab
+  artifactKey: Guid(c9c15480150b39f4fb9f56b207eb57cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Prefabs/SAR2000.prefab using Guid(c9c15480150b39f4fb9f56b207eb57cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734e1524890887a616d43d4f2719303f') in 0.111926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 66
+========================================================================
+Received Import Request.
+  Time since last request: 17.481824 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Modles/Bomb.FBX
+  artifactKey: Guid(b2cfa8846ffe4f34fa586e35b7ade848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Modles/Bomb.FBX using Guid(b2cfa8846ffe4f34fa586e35b7ade848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58eb874c18b8020fa6166977d830b04c') in 0.129919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Modles/M10.FBX
+  artifactKey: Guid(28277f6ea8a38054cbc36219c29f23ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Modles/M10.FBX using Guid(28277f6ea8a38054cbc36219c29f23ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7a56314260bb4dd9f635f98ea95404') in 0.203502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 60
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Modles/M590.FBX
+  artifactKey: Guid(bff339c7996c81d429151eef0fb55872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Modles/M590.FBX using Guid(bff339c7996c81d429151eef0fb55872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9130e0e2f0a5297ce7550e71cac2f357') in 0.154154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 110.619252 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures
+  artifactKey: Guid(b194661e017187046ba5ada6c0d0cecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures using Guid(b194661e017187046ba5ada6c0d0cecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a930003700f28d34df4ec8c1cda1e4a7') in 0.001684 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 11.149834 seconds.
-  path: Assets/Adventure_Character/Textures
-  artifactKey: Guid(c460b098cea61994d952cea60248bd75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Adventure_Character/Textures using Guid(c460b098cea61994d952cea60248bd75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3cded3cdf3bb749e129b3ff8ac07a43') in 0.001672 seconds
+  Time since last request: 3.839378 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures/M500
+  artifactKey: Guid(cb6efd531714cfa40abc9e5ca95c7eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures/M500 using Guid(cb6efd531714cfa40abc9e5ca95c7eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d048b45f677da81bc263c916577a0f') in 0.000906 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.227167 seconds.
-  path: Assets/Adventure_Character/Prefabs
-  artifactKey: Guid(a4767ed5cb0999f44999893699fafe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Adventure_Character/Prefabs using Guid(a4767ed5cb0999f44999893699fafe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd349e0a999cba63a780ef61097e55e4c') in 0.021586 seconds
+  Time since last request: 0.101027 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures/M500/M500_Ao.tga
+  artifactKey: Guid(323c137e6ac1aaa49bda91ddf6eb84f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures/M500/M500_Ao.tga using Guid(323c137e6ac1aaa49bda91ddf6eb84f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4346f4c03bbe90d4006d10ee8a477851') in 0.104185 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.333371 seconds.
-  path: Assets/Adventure_Character/Mesh
-  artifactKey: Guid(c2e93fc3ba422d843b4175b7b0c1e1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Adventure_Character/Mesh using Guid(c2e93fc3ba422d843b4175b7b0c1e1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2ff1057c07b0fe09f27aac3edcbfdf') in 0.001132 seconds
+  Time since last request: 0.000040 seconds.
+  path: Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures/M500/M500_Normal.tga
+  artifactKey: Guid(86e0ab0020a0d3748b8a887e07f8ffdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleColor_SeasonOne_Bandit_WeaponsPackage/Textures/M500/M500_Normal.tga using Guid(86e0ab0020a0d3748b8a887e07f8ffdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed31d5c99052b50994c513e0ea42027') in 0.067601 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 23.590153 seconds.
-  path: Assets/Characters/Player_Character/Scenes
-  artifactKey: Guid(2b808985bbd1b1c43b09ca5a830b8255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Player_Character/Scenes using Guid(2b808985bbd1b1c43b09ca5a830b8255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02c4df083b351d3686560f58f474758') in 0.000928 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 12.822751 seconds.
-  path: Assets/Characters/Player_Character/Prefabs/Man_01.prefab
-  artifactKey: Guid(ebc4580c7ed532b4cb07171aed640d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Player_Character/Prefabs/Man_01.prefab using Guid(ebc4580c7ed532b4cb07171aed640d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266efa1109c0fbbcb464bf8b07c9a5bf') in 1.461029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 199
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Characters/Player_Character/Prefabs/Man_Full.prefab
-  artifactKey: Guid(5358fd1db56fd5f4ebd3a9185f223155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Player_Character/Prefabs/Man_Full.prefab using Guid(5358fd1db56fd5f4ebd3a9185f223155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362a5bd1b8489c9aa132a85220afd598') in 0.685762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 199
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
