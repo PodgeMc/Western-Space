@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float rotateInput;
 
     public Camera firstPersonCamera;
-    public Camera thirdPersonCamera;
+    // public Camera thirdPersonCamera;
 
     private bool isFirstPerson = true; // Flag to track the current view mode
 
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         // Start with first person view active and third person view deactivated
         firstPersonCamera.enabled = true;
-        thirdPersonCamera.enabled = false;
+        // thirdPersonCamera.enabled = false;
     }
 
     void Update()
@@ -50,12 +50,12 @@ public class PlayerController : MonoBehaviour
         rotateInput = value.Get<float>();
     }
 
-    public void ToggleView()
-    {
-        isFirstPerson = !isFirstPerson; // Toggle the view mode flag
+    /* public void ToggleView()
+     {
+         isFirstPerson = !isFirstPerson; // Toggle the view mode flag
 
-        // Activate/deactivate cameras based on the view mode
-        firstPersonCamera.enabled = isFirstPerson;
-        thirdPersonCamera.enabled = !isFirstPerson;
-    }
+         // Activate/deactivate cameras based on the view mode
+         firstPersonCamera.enabled = isFirstPerson;
+         thirdPersonCamera.enabled = !isFirstPerson;
+     }*/
 }
