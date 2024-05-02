@@ -20,7 +20,7 @@ public class Equip_Weapon : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Weapon_Collided_with == true)
+        if (Input.GetKey(KeyCode.E) && Weapon_Collided_with == true)  // replaced GetKeyDown with GetKey
         {
             Gun.transform.position = Vector3.MoveTowards(Gun.transform.position, Gun_Position.transform.position, Equip_Speed * Time.deltaTime);
             Gun.transform.parent = Gun_Position.transform;
