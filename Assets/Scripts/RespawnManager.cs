@@ -8,7 +8,7 @@ public class RespawnManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Weapon")) // changed from player to weapon for testing
         {
             Debug.Log("Player has collided with the respawn trigger.");
             RespawnPlayer(other.gameObject);

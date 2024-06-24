@@ -5,38 +5,57 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Equip_Weapon : MonoBehaviour
 {
-    bool Weapon_Collided_with;
     [SerializeField]
-    private GameObject Gun_Position; // where the weapon will rest after being equiped
-    [SerializeField]
-    private GameObject Gun; // the weapon to equip // this might be changed later  to add more weapons
-    public float Equip_Speed = 5.0f;
+    private GameObject Gun;
+    public Transform WeaponParent;
 
     void Start()
     {
-
+        Gun.GetComponent<Rigidbody>().isKinematic = true;
     }
-
-
-    void FixedUpdate()
+    void Update()
     {
-        if (Input.GetKey(KeyCode.E) && Weapon_Collided_with == true)  // replaced GetKeyDown with GetKey
+        if (Input.GetKey(KeyCode.F))
         {
-            Gun.transform.position = Vector3.MoveTowards(Gun.transform.position, Gun_Position.transform.position, Equip_Speed * Time.deltaTime);
-            Gun.transform.parent = Gun_Position.transform;
+            Drop();
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void Drop()
     {
-        if (other.CompareTag("Weapon"))
-        {
-            Debug.Log("weapon collided with");
-            Weapon_Collided_with = true;
+        WeaponParent.DetachChildren();
+        Gun.transform.eulerAngles = new Vector3(Gun.transform.position.x, Gun.transform.position.y, Gun.transform.position.z);
+        Gun.GetComponent<Rigidbody>().isKinematic = false;
+        Gun.GetComponent<MeshCollider>().enabled = true;
+    }
 
+    void Equip()
+    {
+        Gun.GetComponent<Rigidbody>().isKinematic = true;
+
+        Gun.transform.position = WeaponParent.transform.position;
+        Gun.transform.rotation = WeaponParent.transform.rotation;
+
+        Gun.GetComponent<MeshCollider>().enabled = false;
+
+        Gun.transform.SetParent(WeaponParent);
+
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                Equip();
+            }
         }
     }
 }
-/*  if player is within  the collider  than the weapon is able to be equipped, Tap e to bring the weapon closer.
- *   If you left click the mouse the gun shoots.
- */
+
+
+
+
+
