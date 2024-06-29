@@ -11,14 +11,16 @@ public class SimpleShoot : MonoBehaviour
     public GameObject muzzleFlashPrefab;
 
     [Header("Location Refrences")]
-    [SerializeField] private Animator gunAnimator;
-    [SerializeField] private Transform barrelLocation;
+    [SerializeField] public Animator gunAnimator;
+    [SerializeField] public Transform barrelLocation;
     [SerializeField] private Transform casingExitLocation;
 
     [Header("Settings")]
-    [Tooltip("Specify time to destory the casing object")] [SerializeField] private float destroyTimer = 2f;
-    [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
-    [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
+    [Tooltip("Specify time to destory the casing object")][SerializeField] private float destroyTimer = 2f;
+    [Tooltip("Bullet Speed")][SerializeField] private float shotPower = 500f;
+    [Tooltip("Casing Ejection Speed")][SerializeField] private float ejectPower = 150f;
+
+
 
 
     void Start()
@@ -32,12 +34,15 @@ public class SimpleShoot : MonoBehaviour
 
     void Update()
     {
+
+
         //If you want a different input, change it here
-        if (Input.GetButtonDown("Fire1"))
-        {
-            //Calls animation on the gun that has the relevant animation events that will fire
-            gunAnimator.SetTrigger("Fire");
-        }
+
+
+        //Calls animation on the gun that has the relevant animation events that will fire
+        //   gunAnimator.SetTrigger("Fire");
+
+
     }
 
 
