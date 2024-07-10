@@ -1,0 +1,45 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 7583 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Mike/source/Western-Space
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+57029
+Successfully changed project path to: C:/Users/Mike/source/Western-Space
+C:/Users/Mike/source/Western-Space
+received signal from system: SIGSEGV
+Obtained 22 stack frames
+0x00007ff7ec46332d (Unity) 
+0x00007ff7ec4682d9 (Unity) 
+0x00007ff7ed437be1 (Unity) 
+0x00007ff7ec467726 (Unity) 
+0x00007ff7ec462b5c (Unity) 
+0x00007ff7ee880ce8 (Unity) udnSetPath
+0x00007ff7ee944548 (Unity) udnSetPath
+0x00007ff7ee84a680 (Unity) udnSetPath
+0x00007ffe174f440f (ntdll) 
+0x00007ffe1746e466 (ntdll) 
+0x00007ffe174f33fe (ntdll) 
+0x00007ff7ebc7282a (Unity) 
+0x00007ff7ebc6d8f0 (Unity) 
+0x00007ff7ebc6c6c8 (Unity) 
+0x00007ff7ebc7962f (Unity) 
+0x00007ff7ebc71974 (Unity) 
+0x00007ff7ebc72a86 (Unity) 
+0x00007ff7ecfb97fe (Unity) 
+0x00007ff7ed4439e5 (Unity) 
+0x00007ff7ee827fee (Unity) udnSetPath
+0x00007ffe15bf257d (KERNEL32) BaseThreadInitThunk
+0x00007ffe174aaa48 (ntdll) 
+

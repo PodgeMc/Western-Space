@@ -10,8 +10,8 @@ public class PrimaryWeapon : MonoBehaviour
 
 
 
-    int Current_Ammo;
-    int Max_Ammo;
+    int Primary_Current_Ammo;
+    int Primary_Max_Ammo;
 
 
 
@@ -22,11 +22,11 @@ public class PrimaryWeapon : MonoBehaviour
     public GameObject Bullet_Prefab;
 
 
-    [Header(" Refrences for weapon1")]
+    [Header(" Refrences for Machinegun")]
     [SerializeField] Transform Barrel_Location_Machine_Gun;
     [Tooltip("Bullet Speed")][SerializeField] private float BulletSpeed = 500f;
 
-    [Header(" Refrences for weapon2")]
+    [Header(" Refrences for Handgun")]
     [SerializeField] Transform barrelLocation;
     [Tooltip("Bullet Speed")][SerializeField] private float shotPower = 500f;
 
@@ -41,11 +41,15 @@ public class PrimaryWeapon : MonoBehaviour
     {
         Shoot();
     }
+
+
     void Shoot()
     {
         //click mouse and gun shoots // if ammo is zero nothing happens 
 
-        // MachineGun
+
+
+        //--------------MACHINEGUN-------------//
 
         if (!Bullet_Prefab)
         { return; }
@@ -60,7 +64,7 @@ public class PrimaryWeapon : MonoBehaviour
             }
         }
 
-        //Handgun
+        //---------------HANDGUN---------------//
 
         if (Equip_Weapon.Weapon_Count == 1)
         {
@@ -88,7 +92,7 @@ public class PrimaryWeapon : MonoBehaviour
     {
         if (Is_Primary_Weapon1 == true || Is_Primary_Weapon2 == true)
         {
-            Current_Ammo = Max_Ammo;
+            Primary_Current_Ammo = Primary_Max_Ammo;
 
         }
 
